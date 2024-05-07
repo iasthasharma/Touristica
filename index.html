@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touristica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">Touristica</h1>
+                <button class="menu-toggle-btn">&#9776;</button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Signup</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="hero-section">
+            <div class="container">
+                <h1>Welcome to Touristica</h1>
+                <p>Your ultimate destination for memorable travel experiences</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="service-cards">
+                    <div class="service-card">
+                        <h3>Customized Travel Packages</h3>
+                        <p>We offer personalized travel packages tailored to your preferences and budget.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Expert Travel Advice</h3>
+                        <p>Our experienced team provides expert advice and recommendations for your travel plans.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>24/7 Customer Support</h3>
+                        <p>We are available round the clock to assist you with any queries or concerns during your
+                            journey.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Group Tours</h3>
+                        <p>Join our group tours and explore fascinating destinations with like-minded travelers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About Us</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src= 'https://source.unsplash.com/400x300/?travel, business' alt="Company Image">
+                    </div>
+                    <div class="about-text">
+                        <p>We are a leading travel company dedicated to providing unforgettable travel experiences. With
+                            years of expertise in the travel industry, we specialize in crafting customized itineraries
+                            that cater to the unique interests and preferences of our clients.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <h2>Gallery</h2>
+                <div class="gallery-images">
+                    <div class="gallery-item">
+                        <img src="https://source.unsplash.com/400x300/?travel, inspiration" alt="Gallery Image 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://source.unsplash.com/400x300/?travel, vacation" alt="Gallery Image 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://source.unsplash.com/400x300/?travel, travelers" alt="Gallery Image 3">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://source.unsplash.com/400x300/?travel, nature" alt="Gallery Image 4">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>For inquiries and bookings, please contact us:</p>
+                <p>Email: info@touristica.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Touristica All rights reserved.</p>
+        </div>
+    </footer>
+     <script>
+        const menuToggleBtn = document.querySelector('.menu-toggle-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggleBtn.addEventListener('click', () => {
+            navLinks.style.display = navLinks.style.display === 'none' ? 'block' : 'none';
+        });
+        
+    </script>
+
+
+</body>
+
+</html>

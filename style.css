@@ -1,0 +1,294 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-toggle-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ddd;
+}
+
+/* Hero section styles */
+.hero-section {
+    background-color: #333;
+    background-image: url('https://source.unsplash.com/1200x600/?travel, inspiration');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background-blend-mode:soft-light;
+    
+}
+/* Overlay to blur */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    backdrop-filter: blur(10px); /* Apply the blur effect */
+}
+
+/* Content styles */
+.hero-content {
+    position: relative; /* Ensure text is above the overlay */
+    z-index: 1; /* Ensure text is above the overlay */
+}
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+/* Service section styles */
+.services-section {
+    background-color: #444;
+    padding: 50px 0;
+}
+
+.services-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    flex: 1;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #555;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* Gallery section styles */
+.gallery-section {
+    background-color: #444;
+    padding: 50px 0;
+}
+
+.gallery-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-item {
+    margin: 10px;
+}
+
+.gallery-item img {
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* About section styles */
+.about-section {
+    background-color: #444;
+    padding: 50px 0;
+}
+
+.about-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-image {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.about-text p {
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* Contact section styles */
+.contact-section {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-bottom: 30px;
+}
+
+.contact-section p {
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 0.8rem;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .navbar .container {
+        justify-content: space-between;
+    }
+
+    .navbar .logo {
+        font-size: 1.2rem;
+    }
+
+    .navbar .menu-toggle-btn {
+        display: block;
+    }
+
+    .menu-toggle-btn.active + .nav-links {
+        display: flex;
+    }
+
+    .hero-section {
+        padding: 80px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .service-card {
+        flex: 0 0 100%;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+    }
+}
